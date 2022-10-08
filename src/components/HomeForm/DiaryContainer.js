@@ -15,7 +15,7 @@ function DiaryContainer({ posts, setPosts }) {
     <>
       <div className=" d-flex justify-content-center my-3">
         <button
-          className="btn w-75 p-3 rounded-4 shadow bg-primary text-secondary fs-3 fw-3"
+          className="btn w-75 p-3 rounded-4 shadow bg-primary text-secondary fs-3 fw-3 mb-4"
           onClick={() => {
             navigate("/post");
           }}
@@ -23,7 +23,7 @@ function DiaryContainer({ posts, setPosts }) {
           Create Diary
         </button>
       </div>
-      <div className=" mx-auto p-4 border border-1 bg-primary mt-1 rounded-5 shadow">
+      <div className=" mx-auto p-4  border border-1 bg-primary mt-1 rounded-5 shadow">
         <div className="my-2 d-flex gap-3 ">
           <SearchText
             changeSearchTerm={changeSearchTerm}

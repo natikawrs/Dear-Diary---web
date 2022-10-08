@@ -44,7 +44,7 @@ function LandingPage() {
             <img
               src={cs2}
               className="d-block w-100"
-              style={{ height: "500px", overflow: "hidden" }}
+              style={{ height: "650px", overflow: "hidden" }}
               alt="picture1"
             />
             <div className="carousel-caption d-none d-md-block position-absolute top-0 start-0">
@@ -71,7 +71,7 @@ function LandingPage() {
             <img
               src={cs1}
               className="d-block w-100"
-              style={{ height: "500px", overflow: "hidden" }}
+              style={{ height: "650px", overflow: "hidden" }}
               alt="picture2"
             />
           </div>
@@ -80,7 +80,7 @@ function LandingPage() {
             <img
               src={cs3}
               className="d-block w-100"
-              style={{ height: "500px", overflow: "hidden" }}
+              style={{ height: "650px", overflow: "hidden" }}
               alt="picture3"
             />
           </div>
@@ -112,34 +112,34 @@ function LandingPage() {
         </button>
       </div>
       <hr className="featurette-divider "></hr>
-      <div className="row featurette">
+      <div className="row featurette p-5">
         <div className="col-md-7 order-md-2">
           <h2 className="featurette-heading fw-normal lh-1 text-success">
             The words of kindness are more healing to a drooping heart than balm
             or honey...
             <span className="text-danger">Sarah Fielding</span>
           </h2>
-          <p className="lead text-secondary">
+          <p className="lead text-secondary pt-5">
             The modern world is full of stressors. Making things worse, most of
             us indulge in activities that increase the effects of these and do
             little to indulge in activities that reduce the effects. A diary can
             be helpful in managing emotions and your health.
           </p>
         </div>
-        <span className="col-md-5 order-md-1">
+        <span className="col-md-5 order-md-1 ps-5">
           <Avatar src={pic2} size="250" />
         </span>
       </div>
 
       <hr className="featurette-divider"></hr>
-      <div className="row featurette">
+      <div className="row featurette p-5">
         <div className="col-md-7 ">
           <h2 className="featurette-heading fw-normal lh-1 text-success">
             If you have no confidence in self, you are twice defeated in the
             race of life...
             <span className="text-danger">Marcus Garvey</span>
           </h2>
-          <p className="lead text-secondary">
+          <p className="lead text-secondary pt-5">
             When you think negatively of yourself, your self-perception suffers.
             And this, in turn, sinks your confidence. The opposite happens when
             you think of yourself positively. In “The Success Principles,” Jack
@@ -148,19 +148,19 @@ function LandingPage() {
             abilities to succeed. This boosts your confidence.
           </p>
         </div>
-        <span className="col-md-5">
+        <span className="col-md-5 ps-5">
           <Avatar src={pic3} size="250" />
         </span>
       </div>
       <hr className="featurette-divider"></hr>
-      <div className="row featurette ">
+      <div className="row featurette p-5">
         <div className="col-md-7 order-md-2 ">
           <h2 className="featurette-heading fw-normal lh-1 text-success">
             Think 100 times before you take a decision. But once that decision
             is taken, stand by it as one man...
             <span className="text-danger">Muhammad Ali Jinnah</span>
           </h2>
-          <p className="lead text-secondary">
+          <p className="lead text-secondary pt-5">
             Writing ideas on paper simplifies the spider web I talked of. And it
             also clears your head so you have an objective look at your ideas
             and decisions. Looking at them on paper forces you to consider
@@ -169,7 +169,7 @@ function LandingPage() {
             stand by.
           </p>
         </div>
-        <span className="col-md-5 order-md-1">
+        <span className="col-md-5 order-md-1 ps-5">
           <Avatar src={pic1} size="250" />
         </span>
       </div>
