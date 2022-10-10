@@ -23,7 +23,7 @@ function Home() {
     fetchPost();
   }, []);
   return (
-    <div className="container mt-5 mb-3" style={{ maxWidth: 576 }}>
+    <div className="container mt-5 mb-3 w-75">
       <DiaryContainer posts={posts} setPosts={setPosts} />
     </div>
   );

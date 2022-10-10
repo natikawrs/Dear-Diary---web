@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import "./theme_1665169882171.css";
 import "./theme_1665204319496.css";
 // import "./theme_1665210562981.css";
+import "react-quill/dist/quill.snow.css";
 import "./index.css";
 import App from "./App";
 import AuthContextProvider from "./contexts/AuthContext";

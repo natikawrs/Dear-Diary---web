@@ -30,6 +30,11 @@ function UpdateForm({ post }) {
     navigate("/");
   };
 
+  const deleteDiaryImg = async () => {
+    return await postService.deleteDiaryImg(post.id);
+    // setUser(res.data.user);
+  };
+
   const [file, setFile] = useState(null);
   const inputEl = useRef();
 
@@ -45,7 +50,7 @@ function UpdateForm({ post }) {
       formData.append("mood", input.mood);
       formData.append("title", input.title);
       formData.append("content", input.content);
-      console.log("FILE>>>>>>>", file);
+      // console.log("FILE>>>>>>>", file);
       formData.append("image", file);
       //   const { error } = validatePost(input);
       //   if (error) {
@@ -71,6 +76,14 @@ function UpdateForm({ post }) {
     }
   };
 
+  const removePostPic = async (e) => {
+    e.preventDefault();
+    setFile(null);
+    inputEl.current.value = "";
+    await deleteDiaryImg(post.id);
+    window.location.reload();
+  };
+
   return (
     <div className="bg-warning p-3 pb-5">
       <div
@@ -94,7 +107,7 @@ function UpdateForm({ post }) {
           value={input.mood}
           onChange={handleChangeInput}
         >
-          <option selected>Select your mood here</option>
+          <option defaultValue>Select your mood here</option>
           <option value="Sunny Day">Sunny Day</option>
           <option value="Rainy Day">Rainy Day</option>
           <option value="Autum Chill">Autum Chill</option>
@@ -134,6 +147,8 @@ function UpdateForm({ post }) {
               className="d-none"
               ref={inputEl}
               onChange={(e) => {
+                console.log(e.target.files[0]);
+                console.log(555);
                 if (e.target.files[0]) {
                   console.log(e.target.files);
                   setFile(e.target.files[0]);
@@ -142,19 +157,31 @@ function UpdateForm({ post }) {
             />
 
             <div className="text-center mt-3">
-              <span onClick={() => inputEl.current.click()}>
+              <button
+                className="btn btn-secondary text-primary"
+                style={{ position: "relative", left: "400px", top: "30px" }}
+                onClick={removePostPic}
+              >
+                <i className="fa-solid fa-xmark" />
+              </button>
+
+              <span
+                onClick={() => {
+                  inputEl.current.click();
+                }}
+              >
                 <div className="d-flex flex-column align-items-center mt-3 py-3 rounded-2 bg-gray-100 hover-bg-gray-200">
                   <div className="text-center rounded-circle bg-gray-300 p-2 position-relative h-10 w-10 "></div>
 
                   <img
+                    className={`cursor-pointer ${
+                      file || post.image ? "w-100" : "w-25"
+                    }`}
                     src={
                       file
                         ? URL.createObjectURL(file)
                         : input.image || uploadImg
                     }
-                    className="cursor-pointer "
-                    width="150"
-                    height="150"
                     alt="Img"
                   />
                 </div>
@@ -162,12 +189,15 @@ function UpdateForm({ post }) {
             </div>
           </div>
 
-          <div className="d-flex justify-content-around mt-3">
-            <button type="submit" className="btn btn-secondary text-primary">
+          <div className="d-flex justify-content-around mt-4 mb-4">
+            <button
+              type="submit"
+              className="btn btn-secondary text-primary p-3 px-3"
+            >
               Update Diary
             </button>
             <button
-              className="btn btn-secondary text-primary"
+              className="btn btn-secondary text-primary p-3 px-3"
               onClick={handleClickDelete}
             >
               Delete Diary

@@ -18,7 +18,7 @@ function NavLayout() {
             className="collapse navbar-collapse d-flex justify-content-end gap-5 pe-5"
             id="navbarNavAltMarkup "
           >
-            <div className="navbar-nav ">
+            <div className="navbar-nav">
               <Link className="nav-link" to="/">
                 Home
               </Link>

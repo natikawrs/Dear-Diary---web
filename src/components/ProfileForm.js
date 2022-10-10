@@ -6,8 +6,9 @@ import Avatar from "../components/Avatar";
 
 function ProfileForm() {
   const {
-    user: { profileImage, userName },
-    updateUser
+    user: { profileImage, userName, id },
+    updateUser,
+    deleteProfileImg
   } = useAuth();
 
   const [input, setInput] = useState({
@@ -47,6 +48,14 @@ function ProfileForm() {
     }
   };
 
+  const removeProfilePic = async (e) => {
+    e.preventDefault();
+    setFile(null);
+    inputEl.current.value = "";
+    await deleteProfileImg();
+    window.location.reload();
+  };
+
   return (
     <div className="bg-warning p-3">
       <div
@@ -66,6 +75,14 @@ function ProfileForm() {
           />
 
           <div className="text-center mt-3">
+            <button
+              className="btn btn-outline-primary bg-secondary"
+              style={{ position: "relative", left: "220px", top: "-90px" }}
+              onClick={removeProfilePic}
+            >
+              <i className="fa-solid fa-xmark" />
+            </button>
+
             <span onClick={() => inputEl.current.click()}>
               <Avatar
                 src={file ? URL.createObjectURL(file) : profileImage}
@@ -77,7 +94,7 @@ function ProfileForm() {
 
         <form className="d-flex flex-column gap-2" onSubmit={handleClickSave}>
           <div className="mb-2">
-            <label className="form-label">Username</label>
+            <label className="form-label pt-3">Username</label>
             <input
               type="text"
               className="form-control"
@@ -99,7 +116,7 @@ function ProfileForm() {
               onChange={handleChangeInput}
             />
           </div>
-          <div className="mb-2">
+          <div className="mb-2 pb-3">
             <label className="form-label">Confirm Password</label>
             <input
               type="text"
@@ -111,7 +128,7 @@ function ProfileForm() {
             />
           </div>
           <div className="d-flex justify-content-around mt-3">
-            <button type="submit" className="btn btn-secondary">
+            <button type="submit" className="btn btn-secondary text-primary">
               Update Profile
             </button>
           </div>

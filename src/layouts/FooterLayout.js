@@ -3,7 +3,7 @@ import fullLogo from "../images/full-Dear-Diary-Secondary-Logo-PNG.webp";
 
 function FooterLayout() {
   return (
-    <div className="row d-flex justify-content-evenly">
+    <div className="row d-flex justify-content-evenly pt-5">
       <hr className="featurette-divider"></hr>
       <div className=" col-sm-6">
         <div className="">

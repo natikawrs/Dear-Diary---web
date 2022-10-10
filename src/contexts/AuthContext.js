@@ -58,8 +58,15 @@ function AuthContextProvider({ children }) {
     setUser(res.data.user);
   };
 
+  const deleteProfileImg = async () => {
+    return await userService.deleteProfileImg();
+    // setUser(res.data.user);
+  };
+
   return (
-    <AuthContext.Provider value={{ user, register, login, logout, updateUser }}>
+    <AuthContext.Provider
+      value={{ user, register, login, logout, updateUser, deleteProfileImg }}
+    >
       {children}
     </AuthContext.Provider>
   );

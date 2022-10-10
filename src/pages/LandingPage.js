@@ -1,6 +1,4 @@
-// import { useState } from "react";
 import Avatar from "../components/Avatar";
-// import LoginModal from "../components/LoginModal";
 import pic1 from "../images/landingpage/1.png";
 import pic2 from "../images/landingpage/2.jpeg";
 import pic3 from "../images/landingpage/3.jpeg";
@@ -9,7 +7,6 @@ import cs1 from "../images/carousel/cs1.jpeg";
 import cs3 from "../images/carousel/cs3.png";
 
 function LandingPage() {
-  // const [open, setOpen] = useState(false);
   return (
     <div className="bg-primary pb-5">
       <div
@@ -23,8 +20,8 @@ function LandingPage() {
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
             className="active"
-            aria-current="true"
             aria-label="Slide 1"
+            aria-current="true"
           ></button>
           <button
             type="button"
@@ -39,6 +36,7 @@ function LandingPage() {
             aria-label="Slide 3"
           ></button>
         </div>
+
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
@@ -47,43 +45,38 @@ function LandingPage() {
               style={{ height: "650px", overflow: "hidden" }}
               alt="picture1"
             />
-            <div className="carousel-caption d-none d-md-block position-absolute top-0 start-0">
+            <div
+              className="carousel-caption d-none d-md-block position-absolute top-0"
+              style={{ position: "relative", left: "-300px", top: "-620px" }}
+            >
               <h1 className="text-primary">Dear Diary</h1>
               <p className="text-primary fs-5">
-                Write what should not be forgotten.
+                Write what should not be forgotten...
               </p>
-
-              {/* <p>
-                <button
-                  type="submit"
-                  className="btn btn-secondary"
-                  onClick={() => setOpen(true)}
-                >
-                  Sign in now
-                </button>
-              </p>
-
-              <LoginModal open={open} close={() => setOpen(false)} /> */}
             </div>
           </div>
 
-          <div className="carousel-item">
-            <img
-              src={cs1}
-              className="d-block w-100"
-              style={{ height: "650px", overflow: "hidden" }}
-              alt="picture2"
-            />
-          </div>
+          <a href="https://www.youtube.com/watch?v=-tTJEtk4JkQ">
+            <div className="carousel-item">
+              <img
+                src={cs1}
+                className="d-block w-100"
+                style={{ height: "650px", overflow: "hidden" }}
+                alt="picture2"
+              />
+            </div>
+          </a>
 
-          <div className="carousel-item">
-            <img
-              src={cs3}
-              className="d-block w-100"
-              style={{ height: "650px", overflow: "hidden" }}
-              alt="picture3"
-            />
-          </div>
+          <a href="https://www.linkedin.com/pulse/7-benefits-writing-dairy-journal-avtarit-arora">
+            <div className="carousel-item">
+              <img
+                src={cs3}
+                className="d-block w-100"
+                style={{ height: "650px", overflow: "hidden" }}
+                alt="picture3"
+              />
+            </div>
+          </a>
         </div>
 
         <button
@@ -111,13 +104,13 @@ function LandingPage() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <hr className="featurette-divider "></hr>
+      {/* <hr className="featurette-divider "></hr> */}
       <div className="row featurette p-5">
         <div className="col-md-7 order-md-2">
           <h2 className="featurette-heading fw-normal lh-1 text-success">
             The words of kindness are more healing to a drooping heart than balm
             or honey...
-            <span className="text-danger">Sarah Fielding</span>
+            <span className="text-danger fs-3">Sarah Fielding</span>
           </h2>
           <p className="lead text-secondary pt-5">
             The modern world is full of stressors. Making things worse, most of
@@ -137,7 +130,7 @@ function LandingPage() {
           <h2 className="featurette-heading fw-normal lh-1 text-success">
             If you have no confidence in self, you are twice defeated in the
             race of life...
-            <span className="text-danger">Marcus Garvey</span>
+            <span className="text-danger fs-3">Marcus Garvey</span>
           </h2>
           <p className="lead text-secondary pt-5">
             When you think negatively of yourself, your self-perception suffers.
@@ -158,7 +151,7 @@ function LandingPage() {
           <h2 className="featurette-heading fw-normal lh-1 text-success">
             Think 100 times before you take a decision. But once that decision
             is taken, stand by it as one man...
-            <span className="text-danger">Muhammad Ali Jinnah</span>
+            <span className="text-danger fs-3">Muhammad Ali Jinnah</span>
           </h2>
           <p className="lead text-secondary pt-5">
             Writing ideas on paper simplifies the spider web I talked of. And it

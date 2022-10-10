@@ -22,7 +22,7 @@ function DiaryContent({ post }) {
 
   return (
     <div
-      className="d-flex align-items-center text-secondary "
+      className="d-flex align-items-center text-secondary  fw-bolder "
       onClick={() => navigate(`/post/${post.id}`)}
     >
       <span className="flex-fill" role="button">

@@ -89,7 +89,7 @@ function RegisterForm() {
               onChange={handleChangeInput}
             />
           </div>
-          <div className="d-flex justify-content-around mt-3">
+          <div className="d-flex justify-content-around mt-4 mb-4">
             <button type="submit" className="btn btn-secondary text-primary">
               Create Account
             </button>

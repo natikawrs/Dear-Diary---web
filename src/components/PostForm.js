@@ -4,6 +4,7 @@ import * as postService from "../api/postApi";
 import { useNavigate } from "react-router-dom";
 import uploadImg from "../images/uploadImg.png";
 import { validatePost } from "../validations/postValidate";
+// import ReactQuill from "react-quill";
 
 function PostForm() {
   const [post, setPost] = useState({});
@@ -55,6 +56,12 @@ function PostForm() {
     }
   };
 
+  const removePic = (e) => {
+    e.preventDefault();
+    setFile(null);
+    inputEl.current.value = "";
+  };
+
   return (
     <div className="bg-warning p-3 pb-5">
       <div
@@ -78,7 +85,7 @@ function PostForm() {
           value={input.mood}
           onChange={handleChangeInput}
         >
-          <option selected>Select your mood here</option>
+          <option defaultValue>Select your mood here</option>
           <option value="Sunny Day">Sunny Day</option>
           <option value="Rainy Day">Rainy Day</option>
           <option value="Autum Chill">Autum Chill</option>
@@ -125,15 +132,21 @@ function PostForm() {
             />
 
             <div className="text-center mt-3">
+              <button
+                className="btn btn-secondary text-primary"
+                style={{ position: "relative", left: "400px", top: "30px" }}
+                onClick={removePic}
+              >
+                <i className="fa-solid fa-xmark" />
+              </button>
+
               <span onClick={() => inputEl.current.click()}>
                 <div className="d-flex flex-column align-items-center mt-3 py-3 rounded-2 bg-gray-100 hover-bg-gray-200">
-                  <div className="text-center rounded-circle bg-gray-300 p-2 position-relative h-10 w-10 "></div>
+                  <div className="text-center rounded-circle bg-gray-300 p-2 position-relative h-10 w-10"></div>
 
                   <img
+                    className={`cursor-pointer ${file ? "w-100" : "w-25"}`}
                     src={file ? URL.createObjectURL(file) : image || uploadImg}
-                    className="cursor-pointer "
-                    width="150"
-                    height="150"
                     alt="Img"
                   />
                 </div>
@@ -141,8 +154,11 @@ function PostForm() {
             </div>
           </div>
 
-          <div className="d-flex justify-content-around mt-3">
-            <button type="submit" className="btn btn-secondary text-primary">
+          <div className="d-flex justify-content-around mt-4 mb-4">
+            <button
+              type="submit"
+              className="btn btn-secondary text-primary p-3 px-3"
+            >
               Create Diary
             </button>
           </div>
