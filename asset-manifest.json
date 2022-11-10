@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dear-Diary-frontend/static/css/main.54ec32b8.css",
-    "main.js": "/Dear-Diary-frontend/static/js/main.e9c22e6c.js",
+    "main.js": "/Dear-Diary-frontend/static/js/main.efc60313.js",
     "static/js/787.5566f5b6.chunk.js": "/Dear-Diary-frontend/static/js/787.5566f5b6.chunk.js",
     "static/media/cs3.png": "/Dear-Diary-frontend/static/media/cs3.3901df585e1d5b2d1350.png",
     "static/media/3.jpeg": "/Dear-Diary-frontend/static/media/3.3bb5313c867213c5b26a.jpeg",
@@ -25,11 +25,11 @@
     "static/media/fa-v4compatibility.woff2": "/Dear-Diary-frontend/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/Dear-Diary-frontend/index.html",
     "main.54ec32b8.css.map": "/Dear-Diary-frontend/static/css/main.54ec32b8.css.map",
-    "main.e9c22e6c.js.map": "/Dear-Diary-frontend/static/js/main.e9c22e6c.js.map",
+    "main.efc60313.js.map": "/Dear-Diary-frontend/static/js/main.efc60313.js.map",
     "787.5566f5b6.chunk.js.map": "/Dear-Diary-frontend/static/js/787.5566f5b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54ec32b8.css",
-    "static/js/main.e9c22e6c.js"
+    "static/js/main.efc60313.js"
   ]
 }
