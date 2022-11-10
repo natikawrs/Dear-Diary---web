@@ -6,7 +6,6 @@ import { useState } from "react";
 
 function DiaryContainer({ posts, setPosts }) {
   const navigate = useNavigate();
-  // const [diaries, setDiaries] = useState();
   const [searchTerm, setSearchTerm] = useState("");
   const [searchMood, setSearchMood] = useState("");
 
@@ -18,12 +17,6 @@ function DiaryContainer({ posts, setPosts }) {
     setSearchMood(mood);
   };
 
-  // const filteredDiaries = diaries.filter(
-  //   (item) => item.title.toLowerCase().includes(searchTerm.toLowerCase())
-  //   //  && searchMood === null
-  // );
-  // console.log(searchMood);
-  // console.log(searchTerm);
   return (
     <>
       <div className=" d-flex justify-content-center my-3">

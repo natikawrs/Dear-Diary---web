@@ -40,7 +40,7 @@ function ProfileForm() {
       }
 
       await updateUser(formData);
-      toast.success("success upload");
+      toast.success("success update");
       setFile(null);
     } catch (err) {
       console.log(err);

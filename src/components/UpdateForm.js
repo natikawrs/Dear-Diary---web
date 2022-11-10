@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import * as postService from "../api/postApi";
 import { useNavigate } from "react-router-dom";
 import uploadImg from "../images/uploadImg.png";
-// import { validatePost } from "../validations/postValidate";
+import { validatePost } from "../validations/postValidate";
 
 function UpdateForm({ post }) {
   const [input, setInput] = useState({});
@@ -50,12 +50,11 @@ function UpdateForm({ post }) {
       formData.append("mood", input.mood);
       formData.append("title", input.title);
       formData.append("content", input.content);
-      // console.log("FILE>>>>>>>", file);
       formData.append("image", file);
-      //   const { error } = validatePost(input);
-      //   if (error) {
-      //     return toast.error(error.message);
-      //   }
+      const { error } = validatePost(input);
+      if (error) {
+        return toast.error(error.message);
+      }
       await updatePost(formData);
       toast.success("success update diary");
       setFile(null);
@@ -188,7 +187,6 @@ function UpdateForm({ post }) {
               </span>
             </div>
           </div>
-
           <div className="d-flex justify-content-around mt-4 mb-4">
             <button
               type="submit"
