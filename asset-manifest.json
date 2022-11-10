@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/%7BDear-Diary-frontend%7D/static/css/main.12218d30.css",
+    "main.js": "/%7BDear-Diary-frontend%7D/static/js/main.4069dcd3.js",
+    "static/js/787.5566f5b6.chunk.js": "/%7BDear-Diary-frontend%7D/static/js/787.5566f5b6.chunk.js",
+    "static/media/cs3.png": "/%7BDear-Diary-frontend%7D/static/media/cs3.3901df585e1d5b2d1350.png",
+    "static/media/3.jpeg": "/%7BDear-Diary-frontend%7D/static/media/3.3bb5313c867213c5b26a.jpeg",
+    "static/media/fa-solid-900.ttf": "/%7BDear-Diary-frontend%7D/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
+    "static/media/fa-brands-400.ttf": "/%7BDear-Diary-frontend%7D/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
+    "static/media/fa-solid-900.woff2": "/%7BDear-Diary-frontend%7D/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
+    "static/media/Screen Shot 2565-10-08 at 13.37.35.png": "/%7BDear-Diary-frontend%7D/static/media/Screen Shot 2565-10-08 at 13.37.35.3ce5096a6b5a245aff7d.png",
+    "static/media/Dear-Diary-Official-Main-Logo-PNG-2.png": "/%7BDear-Diary-frontend%7D/static/media/Dear-Diary-Official-Main-Logo-PNG-2.f5f0607605467cffac9a.png",
+    "static/media/cs1.jpeg": "/%7BDear-Diary-frontend%7D/static/media/cs1.62f427c7fa923064afe9.jpeg",
+    "static/media/1.png": "/%7BDear-Diary-frontend%7D/static/media/1.7434f8334c0383812278.png",
+    "static/media/fa-brands-400.woff2": "/%7BDear-Diary-frontend%7D/static/media/fa-brands-400.e1a247a5ef41e1975742.woff2",
+    "static/media/cs2.jpeg": "/%7BDear-Diary-frontend%7D/static/media/cs2.45ab8a1fb61e1ee3c4ec.jpeg",
+    "static/media/profileImg.png": "/%7BDear-Diary-frontend%7D/static/media/profileImg.86d44f219d58009ecac9.png",
+    "static/media/uploadImg.png": "/%7BDear-Diary-frontend%7D/static/media/uploadImg.2f419476d742b028fa89.png",
+    "static/media/fa-regular-400.ttf": "/%7BDear-Diary-frontend%7D/static/media/fa-regular-400.abf801b7acb6705a15ad.ttf",
+    "static/media/ecommerce-icon-home-icon-market-icon-png-favpng-Sbm1PB6dTK5XMGEKHDNzNWkSQ.jpeg": "/%7BDear-Diary-frontend%7D/static/media/ecommerce-icon-home-icon-market-icon-png-favpng-Sbm1PB6dTK5XMGEKHDNzNWkSQ.870651ada0dac8e4eaeb.jpeg",
+    "static/media/fa-regular-400.woff2": "/%7BDear-Diary-frontend%7D/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
+    "static/media/full-Dear-Diary-Secondary-Logo-PNG.webp": "/%7BDear-Diary-frontend%7D/static/media/full-Dear-Diary-Secondary-Logo-PNG.9cd2f17761013f66be34.webp",
+    "static/media/2.jpeg": "/%7BDear-Diary-frontend%7D/static/media/2.80c672cc34e2d61d0ce6.jpeg",
+    "static/media/fa-v4compatibility.ttf": "/%7BDear-Diary-frontend%7D/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
+    "static/media/fa-v4compatibility.woff2": "/%7BDear-Diary-frontend%7D/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
+    "index.html": "/%7BDear-Diary-frontend%7D/index.html",
+    "main.12218d30.css.map": "/%7BDear-Diary-frontend%7D/static/css/main.12218d30.css.map",
+    "main.4069dcd3.js.map": "/%7BDear-Diary-frontend%7D/static/js/main.4069dcd3.js.map",
+    "787.5566f5b6.chunk.js.map": "/%7BDear-Diary-frontend%7D/static/js/787.5566f5b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12218d30.css",
+    "static/js/main.4069dcd3.js"
+  ]
+}
